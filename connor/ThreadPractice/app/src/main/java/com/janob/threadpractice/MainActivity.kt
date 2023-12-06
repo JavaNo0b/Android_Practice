@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val handler = android.os.Handler(Looper.getMainLooper()) //메인스레드의 고유 루퍼를 핸들러에 저장
+        //runOnUiThread로 대체하면 handler 사용하지 않아도 됨
+//        val handler = android.os.Handler(Looper.getMainLooper()) //메인스레드의 고유 루퍼를 핸들러에 저장
 
         val imageList = arrayListOf<Int>() //img를 저장할 리스트
 
