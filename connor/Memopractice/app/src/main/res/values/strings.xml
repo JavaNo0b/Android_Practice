@@ -1,0 +1,11 @@
+
+<resources>
+    <string name="app_name">MemoPractice</string>
+
+    <!-- Kakao KEY설정[AndroidManifest.xml에도 설정]-->
+    <!-- Kakao-init에서 사용 -->
+    <string name="kakao_app_key">4e11c0088f6341af1a3c67ad308aa503</string>
+    <!-- AndroidManifest.xml에서 사용 -->
+    <string name="kakao_app_key2">kakao4e11c0088f6341af1a3c67ad308aa503</string>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/select_color">
+
+    <ImageView
+        android:id="@+id/editbar_play_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/btn_editbar_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editbar_play_tv"
+        app:layout_constraintEnd_toStartOf="@id/editbar_playlist_iv"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/editbar_play_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="듣기"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/editbar_play_iv"
+        app:layout_constraintEnd_toEndOf="@id/editbar_play_iv"
+        app:layout_constraintTop_toBottomOf="@id/editbar_play_iv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/editbar_playlist_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/btn_editbar_addplaylist"
+        app:layout_constraintStart_toEndOf="@id/editbar_play_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editbar_playlist_tv"
+        app:layout_constraintEnd_toStartOf="@id/editbar_mylist_iv"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/editbar_playlist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="듣기"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/editbar_playlist_iv"
+        app:layout_constraintEnd_toEndOf="@id/editbar_playlist_iv"
+        app:layout_constraintTop_toBottomOf="@id/editbar_playlist_iv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/editbar_mylist_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/btn_editbar_mylist"
+        app:layout_constraintStart_toEndOf="@id/editbar_playlist_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editbar_mylist_tv"
+        app:layout_constraintEnd_toStartOf="@id/editbar_delete_iv"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/editbar_mylist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="듣기"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/editbar_mylist_iv"
+        app:layout_constraintEnd_toEndOf="@id/editbar_mylist_iv"
+        app:layout_constraintTop_toBottomOf="@id/editbar_mylist_iv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/editbar_delete_iv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/btn_editbar_delete"
+        app:layout_constraintStart_toEndOf="@id/editbar_mylist_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
